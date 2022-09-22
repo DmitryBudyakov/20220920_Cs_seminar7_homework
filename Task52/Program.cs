@@ -56,7 +56,7 @@ double[] CountAverageInColumnsArray2D(int[,] matrix)  // среднее ариф
 
         double aver = (double)sumColumns / matrix.GetLength(0);
         // Console.WriteLine($"i:{i} sum:{sumColumns}, aver:{aver}");   // для проверки
-        arrayResults[i] = Math.Round(aver, 1, MidpointRounding.AwayFromZero);
+        arrayResults[i] = Math.Round(aver, 1, MidpointRounding.ToZero);
     }
     return arrayResults;
 }
